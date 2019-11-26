@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatButtonModule} from "@angular/material/button";
+import { CalendarpComponent } from './sidebar/calendarp/calendarp.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {MatButtonModule} from "@angular/material/button";
     HeaderComponent,
     EventosComponent,
     NextEventsComponent,
-    SidenavComponent
+    SidenavComponent,
+    CalendarpComponent
   ],
   imports: [
     BrowserModule,

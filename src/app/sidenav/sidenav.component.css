@@ -14,3 +14,12 @@
 .example-sidenav {
   padding: 60px;
 }
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+#boton1{
+  left: -47%;
+  position: relative;
+}
+

@@ -12,6 +12,7 @@ import { NextEventsComponent } from './calendario/next-events/next-events.compon
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import {MatSidenavModule} from "@angular/material/sidenav";
+import {MatButtonModule} from "@angular/material/button";
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import {MatSidenavModule} from "@angular/material/sidenav";
     AppRoutingModule,
     FullCalendarModule,
     BrowserAnimationsModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

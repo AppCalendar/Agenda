@@ -11,9 +11,8 @@ import { EventosComponent } from './calendario/eventos/eventos.component';
 import { NextEventsComponent } from './calendario/next-events/next-events.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidenavComponent } from './sidenav/sidenav.component';
-import {MatSidenavModule} from "@angular/material/sidenav";
-import {MatButtonModule} from "@angular/material/button";
-import { CalendarpComponent } from './sidebar/calendarp/calendarp.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -22,8 +21,7 @@ import { CalendarpComponent } from './sidebar/calendarp/calendarp.component';
     HeaderComponent,
     EventosComponent,
     NextEventsComponent,
-    SidenavComponent,
-    CalendarpComponent
+    SidenavComponent
   ],
   imports: [
     BrowserModule,

@@ -19,26 +19,26 @@ export class EventosComponent implements OnInit {
     this.events = [
       {
           title: 'All Day Event',
-          start: '2016-01-01',
-          end: '2016-01-10'
+          start: '2019-11-05',
+          end: '2019-11-07'
       },
       {
           title: 'Long Event',
-          start: '2016-01-07',
-          end: '2016-01-10'
+          start: '2019-11-21',
+          end: '2019-11-22'
       },
       {
           title: 'Repeating Event',
-          start: '2016-01-09T16:00:00'
+          start: '2019-11-11T16:00:00'
       },
       {
           title: 'Repeating Event',
-          start: '2016-01-16T16:00:00'
+          start: '2019-12-04T16:00:00'
       },
       {
           title: 'Conference',
-          start: '2016-01-11',
-          end: '2016-01-13'
+          start: '2019-12-10',
+          end: '2019-12-12'
       }
     ];
 

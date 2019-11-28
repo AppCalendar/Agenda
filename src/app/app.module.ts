@@ -13,6 +13,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatButtonModule} from '@angular/material/button';
+import {CalendarModule} from 'primeng/calendar';
+import { SidebarCalendarComponent } from './sidebar/sidebar-calendar/sidebar-calendar.component';
+import {PaginatorModule} from "primeng/paginator";
+import { SidebarComponent } from "./sidebar/sidebar.component";
 
 @NgModule({
   declarations: [
@@ -21,7 +25,9 @@ import {MatButtonModule} from '@angular/material/button';
     HeaderComponent,
     EventosComponent,
     NextEventsComponent,
-    SidenavComponent
+    SidenavComponent,
+    SidebarCalendarComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +35,9 @@ import {MatButtonModule} from '@angular/material/button';
     FullCalendarModule,
     BrowserAnimationsModule,
     MatSidenavModule,
-    MatButtonModule
+    MatButtonModule,
+    CalendarModule,
+    PaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

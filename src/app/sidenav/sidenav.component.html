@@ -7,9 +7,13 @@
     </button>
   </div>
 </header>
-<mat-drawer-container class="example-container" autosize>
-  <mat-drawer #drawer class="example-sidenav" mode="side">
-    <app-sidebar-calendar></app-sidebar-calendar>
-  </mat-drawer>
-    <app-calendario></app-calendario>
-</mat-drawer-container>
+<div style="height: 850px;">
+  <mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+      <app-sidebar-calendar></app-sidebar-calendar>
+    </mat-drawer>
+      <div style="width: 1000px; height: 700px;">
+        <app-calendario></app-calendario>
+      </div>
+  </mat-drawer-container>
+<div>

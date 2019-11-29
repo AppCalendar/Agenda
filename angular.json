@@ -33,7 +33,8 @@
               "node_modules/primeicons/primeicons.css",
               "node_modules/@fullcalendar/core/main.min.css",
               "node_modules/@fullcalendar/daygrid/main.min.css",
-              "node_modules/@fullcalendar/timegrid/main.min.css"
+              "node_modules/@fullcalendar/timegrid/main.min.css",
+              "node_modules/@fullcalendar/list/main.min.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.slim.min.js",

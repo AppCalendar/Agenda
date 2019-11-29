@@ -15,8 +15,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatButtonModule} from '@angular/material/button';
 import {CalendarModule} from 'primeng/calendar';
 import { SidebarCalendarComponent } from './sidebar/sidebar-calendar/sidebar-calendar.component';
-import {PaginatorModule} from "primeng/paginator";
-import { SidebarComponent } from "./sidebar/sidebar.component";
+import {PaginatorModule} from 'primeng/paginator';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [

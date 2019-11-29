@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 // importo los modulos de fullcalendar
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
@@ -11,7 +11,7 @@ import interactionPlugin from '@fullcalendar/interaction';
 })
 export class EventosComponent implements OnInit {
   // array donde se guardaran los eventos
-  public events: any[]; // Creo un array donde iran guardados los eventos.
+  @Input() events: any; // Creo un array donde iran guardados los eventos.
   public options: any;
 
   // Cargo en el constructor datos iniciales
@@ -37,8 +37,8 @@ export class EventosComponent implements OnInit {
       },
       {
           title: 'Conference',
-          start: '2019-12-10',
-          end: '2019-12-12'
+          start: '2019-11-28',
+          end: '2019-11-30'
       }
     ];
 
@@ -49,7 +49,8 @@ export class EventosComponent implements OnInit {
           left: 'prev,next',
           center: 'title',
           right: 'month,agendaWeek,agendaDay'
-      }
+      },
+      editable: false
     };
 
    }

@@ -1,10 +1,24 @@
 <header>
-  <div class="example-sidenav-content">
-    <button mat-fab color="primary" id="boton1" type="button" mat-button (click)="drawer.toggle()">
-      <i class="material-icons">
-        dehaze
-      </i>
-    </button>
+  <div class="row" id="header">
+    <div  class="example-sidenav-content">
+        <div class="col-1">
+          <button mat-fab color="primary" id="boton1" type="button" mat-button (click)="drawer.toggle()">
+            <i class="material-icons">
+              dehaze
+            </i>
+          </button>
+        </div>
+        <div class="col-1 border p-2">    
+          <img class="img-fluid border" src="https://logodix.com/logo/2096007.jpg" alt=""/>
+        </div>  
+        <div class="col-10">
+          <nav class="nav text-left border">
+              <a class="nav-link active">Eventos</a>
+              <a class="nav-link" href="#">Añadir evento</a>
+              <a class="nav-link disabled" href="#">Disabled</a>
+          </nav>
+        </div>
+    </div>
   </div>
 </header>
 <div style="height: 850px;">

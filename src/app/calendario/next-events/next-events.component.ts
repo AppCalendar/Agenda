@@ -1,4 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import listPluging from '@fullcalendar/list';
+// importo los modulos de fullcalendar
+import dayGridPlugin from '@fullcalendar/daygrid';
+import timeGridPlugin from '@fullcalendar/timegrid';
+import interactionPlugin from '@fullcalendar/interaction';
 
 @Component({
   selector: 'app-next-events',
@@ -7,7 +12,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NextEventsComponent implements OnInit {
 
-  constructor() { }
+  @Input() events: any;
+
+  public options: any;
+
+  constructor() {
+    this.options = {
+      plugins: [listPluging, dayGridPlugin, timeGridPlugin, interactionPlugin],
+      defaultDate: new Date(),
+        header: {
+            left: 'Proximos eventos',
+            right: 'list'
+        },
+        editable: false
+      };
+   }
 
   ngOnInit() {
   }

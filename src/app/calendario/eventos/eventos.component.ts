@@ -3,6 +3,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
+import esLocale from '@fullcalendar/core/locales/es';
 
 @Component({
   selector: 'app-eventos',
@@ -46,6 +47,7 @@ export class EventosComponent implements OnInit {
       plugins: [dayGridPlugin, timeGridPlugin, interactionPlugin],
       defaultDate: new Date(),
       defaulView: 'dayGridMonth',
+      locale: esLocale, // establece el calendario en mi idioma
       header: {
           left: 'prev,next, today',
           center: 'title',

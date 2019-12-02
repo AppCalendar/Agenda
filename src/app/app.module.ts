@@ -19,9 +19,10 @@ import {PaginatorModule} from 'primeng/paginator';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { EventosSidebarComponent } from './sidebar/eventos-sidebar/eventos-sidebar.component';
 import {MatTreeModule} from '@angular/material/tree';
-import {MatCheckboxModule} from "@angular/material/checkbox";
-import {MatInputModule} from "@angular/material/input";
-import {MatIconModule} from "@angular/material/icon";
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatInputModule} from '@angular/material/input';
+import {MatIconModule} from '@angular/material/icon';
+import { AddEventComponent } from './calendario/add-event/add-event.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import {MatIconModule} from "@angular/material/icon";
     SidenavComponent,
     SidebarCalendarComponent,
     SidebarComponent,
-    EventosSidebarComponent
+    EventosSidebarComponent,
+    AddEventComponent
   ],
   imports: [
     BrowserModule,

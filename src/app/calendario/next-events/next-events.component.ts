@@ -4,6 +4,7 @@ import listPluging from '@fullcalendar/list';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
+import esLocale from '@fullcalendar/core/locales/es';
 
 @Component({
   selector: 'app-next-events',
@@ -20,9 +21,12 @@ export class NextEventsComponent implements OnInit {
     this.options = {
       plugins: [listPluging, dayGridPlugin, timeGridPlugin, interactionPlugin],
       defaultDate: new Date(),
+      locale: esLocale,
       defaultView: 'listWeek',
       header: {
-          left: 'Proximos eventos'
+          left: 'Proximos eventos',
+          center: '',
+          right: ''
       },
       editable: false
       };

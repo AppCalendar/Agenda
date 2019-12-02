@@ -45,12 +45,26 @@ export class EventosComponent implements OnInit {
     this.options = {
       plugins: [dayGridPlugin, timeGridPlugin, interactionPlugin],
       defaultDate: new Date(),
+      defaulView: 'dayGridMonth',
       header: {
-          left: 'prev,next',
+          left: 'prev,next, today',
           center: 'title',
           right: 'month,agendaWeek,agendaDay'
       },
-      editable: false
+      selectOverlap() {
+        return console.log('Hola, has seleccionado un evento de una casilla!!');
+      },
+      dateClick(info) {
+        alert('La fecha es: ' + info.dateStr);
+        alert('Las coordenadas de la casilla son: ' + info.jsEvent.pageX + ',' + info.jsEvent.pageY);
+        alert('Tipo de dato actual es: ' + info.view.type);
+        // cambiar color de la casilla una vez es seleccionada
+        info.dayEl.style.backgroundColor = 'lightblue';
+      },
+      default: true,
+      editable: false,
+      selectable: true,
+      unselectCancel: '.my-form'
     };
 
    }

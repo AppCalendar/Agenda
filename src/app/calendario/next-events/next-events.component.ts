@@ -20,11 +20,11 @@ export class NextEventsComponent implements OnInit {
     this.options = {
       plugins: [listPluging, dayGridPlugin, timeGridPlugin, interactionPlugin],
       defaultDate: new Date(),
-        header: {
-            left: 'Proximos eventos',
-            right: 'list'
-        },
-        editable: false
+      defaultView: 'listWeek',
+      header: {
+          left: 'Proximos eventos'
+      },
+      editable: false
       };
    }
 

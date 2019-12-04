@@ -23,6 +23,9 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import { AddEventComponent } from './calendario/add-event/add-event.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule} from '@angular/material/core';
 
 
 @NgModule({
@@ -50,9 +53,16 @@ import { AddEventComponent } from './calendario/add-event/add-event.component';
     MatTreeModule,
     MatCheckboxModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+    MatDialogModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [AddEventComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor() {}
+
+}

@@ -14,8 +14,8 @@
         <div class="col-10">
           <nav class="nav text-left border">
               <a class="nav-link" href="#" [routerLink]="['/events']" routerLinkActive="router-link-active">Eventos</a>
-              <a class="nav-link" href="#">Añadir evento</a>
-              <a class="nav-link disabled" href="#">Disabled</a>
+              <a class="nav-link" (click)="openDialog()">Añadir evento</a>
+              <a class="nav-link disabled" >Disabled</a>
           </nav>
         </div>
     </div>

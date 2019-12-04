@@ -1,1 +1,12 @@
-<p>add-event works!</p>
+<h2 mat-dialog-title> Añadir evento </h2>
+<hr>
+<mat-dialog-content>Seleccione la fecha a la que desea añadir el evento</mat-dialog-content>
+<mat-form-field>
+  <input matInput [matDatepicker]="miDatePicker" [min]="minDate" [max]="maxDate">
+  <mat-datepicker-toggle [for]="miDatePicker" matSuffix></mat-datepicker-toggle>
+  <mat-datepicker #miDatePicker ></mat-datepicker>
+</mat-form-field>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>Añadir</button>
+  <button mat-button mat-dialog-close>Cancelar</button>
+</mat-dialog-actions>

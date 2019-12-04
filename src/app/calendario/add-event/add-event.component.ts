@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class AddEventComponent implements OnInit {
 
   constructor() { }
+  minDate = new Date();
+  maxDate = new Date(2050, 12, 1);
 
   ngOnInit() {
   }

@@ -9,7 +9,7 @@ import { AddEventComponent } from './calendario/add-event/add-event.component';
 const routes: Routes = [
   {path: 'eventos', component: EventosComponent},
   {path: 'add-event', component: AddEventComponent},
-  {path: '**', pathMatch: 'full', redirectTo: 'events'}
+  {path: '**', pathMatch: 'full', redirectTo: 'eventos'}
 ];
 
 @NgModule({

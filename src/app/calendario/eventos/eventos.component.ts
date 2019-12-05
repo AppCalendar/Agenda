@@ -13,7 +13,8 @@ import esLocale from '@fullcalendar/core/locales/es';
 export class EventosComponent implements OnInit {
   // array donde se guardaran los eventos
   @Input() events: any; // Creo un array donde iran guardados los eventos.
-  public options: any;
+  public optionsMonth: any;
+  public optionsList: any;
 
   // Cargo en el constructor datos iniciales
   constructor() {

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pagina Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <LINK REL=StyleSheet HREF="login.component.css" TYPE="text/css" MEDIA=screen>
+</head>
+<body background="img/imagen1.jpg">
+<div>
+  <button href="#Login" type="button" class="btn btn-primary" class="trigger-btn" data-toggle="modal" id="BotonLogin1">Iniciar Sesion</button>
+  <button href="#Registro" type="button" class="btn btn-primary" class="trigger-btn" data-toggle="modal" id="BotonRegistro1">Registrarse</button>
+  <button href="#Contacto" type="button" class="btn btn-primary" class="trigger-btn" data-toggle="modal" id="BotonRegistro1">Contacto</button>
+  <img src="img/calendario.png" id="calendariopng">
+  <div class="badge badge-primary text-wrap" style="width: 8rem;">
+    Calendario
+  </div>
+</div>
+
+<div id="Login" class="modal fade">
+  <div class="modal-dialog modal-login">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Login</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form action="/examples/actions/confirmation.php" method="post">
+          <div class="form-group">
+            <i class="fa fa-user"></i>
+            <input type="text" class="form-control" placeholder="Username" required="required">
+          </div>
+          <div class="form-group">
+            <i class="fa fa-lock"></i>
+            <input type="password" class="form-control" placeholder="Password" required="required">
+          </div>
+          <div class="form-group">
+            <input type="submit" class="btn btn-primary btn-block btn-lg" value="Login">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a href="#myModa2" type="button">¿Crear Cuenta?</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="Registro" class="modal fade">
+  <div class="modal-dialog modal-login">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Registro</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form action="/examples/actions/confirmation.php" method="post">
+          <div class="form-group">
+            <i class="fa fa-user"></i>
+            <input type="text" class="form-control" placeholder="Nick" required="required">
+          </div>
+          <div class="form-group">
+            <i class="fa fa-lock"></i>
+            <input type="password" class="form-control" placeholder="Password" required="required">
+          </div>
+          <div class="form-group">
+            <input type="submit" class="btn btn-primary btn-block btn-lg" value="Registrarse">
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div id="Contacto" class="container contact-form modal fade">
+  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+  <div class="contact-image">
+    <img src="img/calendario.png" id="calendariopng">
+  </div>
+  <form method="post">
+    <h3>Contacto</h3>
+    <div class="row" id="divContacto">
+      <div class="col-md-6">
+        <div class="form-group">
+          <input type="text" name="txtName" class="form-control" placeholder="Nombre" value="" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="txtEmail" class="form-control" placeholder="Correo" value=""  required="required" />
+        </div>
+        <div class="form-group">
+          <input type="submit" name="btnSubmit" class="btnContact" value="Enviar Mensaje" />
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <textarea name="txtMsg" class="form-control" placeholder="Mensaje" required="required" style="width: 100%; height: 150px;"></textarea>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+</body>
+</html>

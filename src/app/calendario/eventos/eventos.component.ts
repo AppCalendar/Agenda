@@ -4,6 +4,7 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
 import esLocale from '@fullcalendar/core/locales/es';
+import listPluging from '@fullcalendar/list';
 
 @Component({
   selector: 'app-eventos',
@@ -44,7 +45,7 @@ export class EventosComponent implements OnInit {
       }
     ];
 
-    this.options = {
+    this.optionsMonth = {
       plugins: [dayGridPlugin, timeGridPlugin, interactionPlugin],
       defaultDate: new Date(),
       defaulView: 'dayGridMonth',
@@ -70,6 +71,18 @@ export class EventosComponent implements OnInit {
       unselectCancel: '.my-form'
     };
 
+    this.optionsList = {
+      plugins: [listPluging, dayGridPlugin, timeGridPlugin, interactionPlugin],
+      defaultDate: new Date(),
+      locale: esLocale,
+      defaultView: 'listWeek',
+      header: {
+          left: 'Proximos eventos',
+          center: '',
+          right: ''
+      },
+      editable: false
+      };
    }
 
   ngOnInit() {

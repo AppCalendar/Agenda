@@ -2,7 +2,7 @@ body {
   font-family: 'Varela Round', sans-serif;
   background-repeat: no-repeat;
   background-position: center center fixed;
-  background-size: 140%
+  background-size: 100% 800px;
 }
 .modal-login {
   color: #636363;

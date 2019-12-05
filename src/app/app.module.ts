@@ -26,6 +26,7 @@ import { AddEventComponent } from './calendario/add-event/add-event.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule} from '@angular/material/core';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { MatNativeDateModule} from '@angular/material/core';
     SidebarCalendarComponent,
     SidebarComponent,
     EventosSidebarComponent,
-    AddEventComponent
+    AddEventComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

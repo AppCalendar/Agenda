@@ -27,7 +27,6 @@ import { MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule} from '@angular/material/core';
 import { LoginComponent } from './login/login.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +38,7 @@ import { LoginComponent } from './login/login.component';
     SidebarComponent,
     EventosSidebarComponent,
     AddEventComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

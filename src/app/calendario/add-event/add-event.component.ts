@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Evento } from '../../models/event.model';
 
 @Component({
   selector: 'app-add-event',
@@ -7,11 +8,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddEventComponent implements OnInit {
 
-  constructor() { }
-  minDate = new Date();
-  maxDate = new Date(2050, 12, 1);
+  public evento: Evento;
+  public showEnd: boolean;
+
+  constructor() {
+    this.evento = new Evento({});
+
+    this.evento.inicio = new Date();
+    this.evento.fin = new Date();
+
+    this.showEnd = false;
+   }
+
 
   ngOnInit() {
   }
 
+  addEvent() {
+
+    if (this.showEnd) {
+      this.evento.fin = null;
+    }
+
+    console.log(this.evento);
+  }
 }

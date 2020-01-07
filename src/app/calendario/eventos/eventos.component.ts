@@ -51,7 +51,7 @@ export class EventosComponent implements OnInit {
       defaulView: 'dayGridMonth',
       locale: esLocale, // establece el calendario en mi idioma
       header: {
-          left: 'prev,next, today',
+          left: 'prev, next, today',
           center: 'title',
           right: 'month,agendaWeek,agendaDay'
       },

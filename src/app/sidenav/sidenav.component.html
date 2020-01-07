@@ -13,8 +13,8 @@
         </div>
         <div class="col-10">
           <nav class="nav text-left border">
-              <a class="nav-link" href="#" [routerLink]="['/events']" routerLinkActive="router-link-active">Eventos</a>
-              <a class="nav-link" (click)="openDialog()">Añadir evento</a>
+              <a class="nav-link" href="#" [routerLink]="['/eventos']" routerLinkActive="router-link-active">Eventos</a>
+              <a class="nav-link" [routerLink]="['/add-event']" routerLinkActive="router-link-active">Añadir evento</a>
               <a class="nav-link disabled" >Disabled</a>
           </nav>
         </div>
@@ -25,7 +25,6 @@
   <mat-drawer-container class="example-container" autosize>
     <mat-drawer #drawer class="example-sidenav" mode="side">
       <app-sidebar-calendar></app-sidebar-calendar>
-      <app-eventos-sidebar> </app-eventos-sidebar>
     </mat-drawer>
       <div style="width: 1000px; height: 700px;">
         <app-calendario></app-calendario>

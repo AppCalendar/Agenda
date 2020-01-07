@@ -5,19 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { CalendarioComponent } from './calendario/calendario.component';
-import {FullCalendarModule} from 'primeng/fullcalendar';
+import { FullCalendarModule } from 'primeng/fullcalendar';
 import { HeaderComponent } from './header/header.component';
 import { EventosComponent } from './calendario/eventos/eventos.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidenavComponent } from './sidenav/sidenav.component';
-import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatButtonModule} from '@angular/material/button';
-import {CalendarModule} from 'primeng/calendar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatButtonModule } from '@angular/material/button';
+import { CalendarModule } from 'primeng/calendar';
 import { SidebarCalendarComponent } from './sidebar/sidebar-calendar/sidebar-calendar.component';
-import {PaginatorModule} from 'primeng/paginator';
+import { PaginatorModule } from 'primeng/paginator';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { EventosSidebarComponent } from './sidebar/eventos-sidebar/eventos-sidebar.component';
-import {MatTreeModule} from '@angular/material/tree';
+import { MatTreeModule } from '@angular/material/tree';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
@@ -26,6 +24,10 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule} from '@angular/material/core';
 import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
+import { CheckboxModule } from 'primeng/checkbox';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -36,9 +38,8 @@ import { LoginComponent } from './login/login.component';
     SidenavComponent,
     SidebarCalendarComponent,
     SidebarComponent,
-    EventosSidebarComponent,
     AddEventComponent,
-    LoginComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +56,10 @@ import { LoginComponent } from './login/login.component';
     MatIconModule,
     MatDialogModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    FormsModule,
+    CheckboxModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
